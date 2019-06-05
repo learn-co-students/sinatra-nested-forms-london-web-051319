@@ -1,1 +1,45 @@
 <h1>Make your form here</h1>
+
+<form action="/pirates" method="POST">
+    <div>
+        <label for="name">Enter the pirate's name: </label>
+        <input type="text" name=pirate[name] id="name" >
+    </div>
+    <div>
+        <label for="weight">Enter the pirate's weight: </label>
+        <input type="number" name=pirate[weight] id="weight" step="0.01">
+    </div>
+    <div>
+        <label for="height">Enter the pirate's height: </label>
+        <input type="number" name=pirate[height] id="height" step="0.01">
+    </div>
+    <input type="submit">
+    <br><br>
+    <div>
+        <label for="name">Enter the first ship's name: </label>
+        <input id="ship_name_1" type="text" name="pirate[ships][][name]" >
+    </div>
+    <div>
+        <label for="type">Enter the first ship's type: </label>
+        <input type="text" name="pirate[ships][][type]" id="ship_type_1" step="0.01">
+    </div>
+    <div>
+        <label for="booty">Enter the first ship's booty: </label>
+        <input type="text" name="pirate[ships][][booty]" id="ship_booty_1" step="0.01">
+    </div>
+    <input type="submit">
+    <br><br>
+    <div>
+        <label for="name">Enter the second ship's name: </label>
+        <input id="ship_name_2" type="text" name="pirate[ships][][name]" >
+    </div>
+    <div>
+        <label for="type">Enter the second ship's type: </label>
+        <input type="text" name="pirate[ships][][type]" id="ship_type_2" step="0.01">
+    </div>
+    <div>
+        <label for="booty">Enter the second ship's booty: </label>
+        <input type="text" name="pirate[ships][][booty]" id="ship_booty_2" step="0.01">
+    </div>
+    <input type="submit" value="Submit">
+</form>
